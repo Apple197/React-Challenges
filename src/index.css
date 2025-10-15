@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
 :root {
-  --primary-color: #E83D50;
+  --primary-color: #e83d50;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -28,7 +28,7 @@ span {
   font-family: "Ubuntu", sans-serif;
 }
 
-main{
+main {
   width: 100%;
   min-height: 100vh;
   background-color: blueviolet;
@@ -36,56 +36,58 @@ main{
   place-items: center;
 }
 
-#travel-journal-container{
-   background-color: white;
-   max-width: 700px;
-   min-height: 650px;
-   width: 100%;
-   margin-inline: auto;
-   border: .2rem solid #ece4e8;
-   border-radius: 1.2rem;
-   overflow: hidden;
+#travel-journal-container {
+  background-color: white;
+  max-width: 700px;
+  min-height: 650px;
+  width: 100%;
+  margin-inline: auto;
+  border: 0.2rem solid #ece4e8;
+  border-radius: 1.2rem;
+  overflow: hidden;
 }
 
-header{
+header {
   background-color: var(--primary-color);
   padding-block: 1rem;
   padding-inline: 2rem;
 }
 
-.header-content-wrapper{
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   column-gap: .75rem;
-   cursor: pointer;
+.header-content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 0.75rem;
+  cursor: pointer;
 }
 
-.header-content-wrapper img{
+.header-content-wrapper img {
   width: 2rem;
   height: 2rem;
   filter: invert(1);
   transition: transform 1s ease-in-out;
 }
 
-.header-content-wrapper:hover img{
+.header-content-wrapper:hover img {
   transform: rotate(360deg);
 }
 
-.header-content-wrapper p{
+.header-content-wrapper p {
   color: white;
   font-size: 1rem;
   line-height: 1;
 }
 
-article{
+article {
   padding-inline: 2.5rem;
   padding-block-start: 2.5rem;
+  padding-block-end: 2.5rem;
   display: flex;
   flex-flow: nowrap column;
+  gap: 3rem;
 }
 
-.location-card{
+.location-card {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -93,74 +95,75 @@ article{
   column-gap: 1.5rem;
 }
 
-.location-card .location-image{
-  width: 600px;
+.location-card .location-image {
+  width: 225px;
   height: 275px;
   border-radius: 1rem;
   overflow: hidden;
+  border: 2px solid #ece4e8;
 }
 
-.location-card .location-image img{
+.location-card .location-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.location-details .location-header{
+.location-details .location-header {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   flex-flow: nowrap row;
   gap: 1.5rem;
-  margin-block-end: .75rem;
+  margin-block-end: 0.75rem;
 }
 
-.location-details .location-header img{
+.location-details .location-header img {
   width: 1.25rem;
   height: 1.25rem;
 }
 
-.location-details .location-header div{
+.location-details .location-header div {
   display: inline-flex;
   align-items: center;
-  column-gap: .5rem;
+  column-gap: 0.5rem;
 }
 
-.location-details .location-header a{
+.location-details .location-header a {
   text-decoration: none;
-  color: rgba(0,0,0,.5);
+  color: rgba(0, 0, 0, 0.5);
   position: relative;
 }
 
-.location-details .location-header a::before{
-  content: '';
+.location-details .location-header a::before {
+  content: "";
   position: absolute;
   bottom: -3px;
   left: 0;
   width: 100%;
   height: 1.5px;
-  background-color: rgba(0,0,0,.5);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-.location-details .location-header div span{
+.location-details .location-header div span {
   text-transform: uppercase;
   font-weight: 700;
-  color: rgba(0,0,0,.5);
+  color: rgba(0, 0, 0, 0.5);
 }
 
-.location-details .location-body h2{
+.location-details .location-body h2 {
   font-size: 2rem;
   margin-block-end: 1.5rem;
 }
 
-.location-details .location-body span{
+.location-details .location-body span {
   display: block;
   font-size: 1rem;
   font-weight: 700;
-  margin-block-end: .65rem;
+  margin-block-end: 0.65rem;
 }
 
-.location-details .location-body p{
+.location-details .location-body p {
   font-size: 1rem;
   line-height: 1.5;
 }
